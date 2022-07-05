@@ -1,0 +1,114 @@
+#blackClock {
+  display : flex;
+  font-size : 1.5em;
+  color: white; 
+}
+
+#whiteClock {
+  display : flex;
+  font-size : 1.5em;
+  color : black;
+}
+ #whiteSpace {
+  display : flex;
+  flex-direction: column;
+  background: white;
+  padding:  5px;
+ }
+ #blackSpace {
+  display : flex;
+  flex-direction: column;
+  background: black;
+  padding:  5px;
+ }
+#btn{
+  display:  flex;
+  flex-direction : column;
+
+}
+#btnAutre{
+  display: flex;
+  background-color: black;
+  justify-content:   center;
+  border: 1px solid white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 5px solid white;
+}
+#title{
+  display : flex;
+ color : white;
+ font-family: 'Baloo 2', cursive;
+ text-transform: uppercase;
+ background-color: black;
+  justify-content: center;
+  border: 5px solid white;
+  letter-spacing: 5px;
+}
+
+
+#whiteAndBlack{
+  display:  flex;
+  flex-direction : row;
+  background-color: black;
+  justify-content:   center;
+  border: 5px solid white;
+}
+
+#gameOver{
+  color:  white;
+  text-transform: uppercase;
+  font-size:  1.5em;
+  padding-left:  1em;
+  padding-top: 1em;
+
+}
+
+p {
+    padding : 5px;
+}
+
+
+
+
+button {
+  margin: 10px;
+  width: 150px;
+  height: 60px;
+  padding: 10px 10px;
+  font-size: 0.8em;
+  font-weight: bolder;
+  font-family: 'Baloo 2', cursive;
+ text-transform: uppercase;
+ letter-spacing: 3px;
+  text-align : auto;
+  border-style: hidden;
+  text-align : auto;
+  border-style: hidden;
+  background:black;
+  color: whitesmoke;
+  border-radius: 50%;
+  border-color: whitesmoke;
+  
+}
+
+
+button:hover {
+  font-size: 1em;
+  
+}
+
+ button:active {
+            background-color: whitesmoke;
+            color:black;
+            font-weight: bolder;
+            box-shadow: inset  1px gray;
+            transform: translateY(2px);
+        
+         }
+
+#btnReset{
+  color: #D33300;  
+}
+
+
