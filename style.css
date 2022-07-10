@@ -112,3 +112,31 @@ button:hover {
 }
 
 
+@media screen and (max-width: 600px) {
+  #timer {
+    display:  flex;
+    flex-direction: column;
+  }
+  #whiteAndBlack {
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  #whiteSpace, #blackSpace{
+
+    border: 10px solid whitesmoke;
+    
+  }
+
+  #btnBlackPlayer, #btnWhitePlayer {
+    margin: auto;
+  }
+
+  #blackClock, #whiteClock {
+    margin: auto;
+    font-size: 2rem;
+
+  }
+}
