@@ -55,8 +55,8 @@ function startWhite() {
 			document.getElementById("btnWhitePlayer").disabled = true;
 			document.getElementById("btnBlackPlayer").disabled = false;
 			document.getElementById("btnWhitePlayer").style.color = "grey";
-			document.getElementById("btnBlackPlayer").style.color = "whitesmoke ";
-			document.getElementById("btnStop").style.color = "whitesmoke";
+			document.getElementById("btnBlackPlayer").style.color = "white ";
+			document.getElementById("btnStop").style.color = "white";
 			document.getElementById("btnBlackPlayer").disabled = false;
 			}
 			
@@ -67,8 +67,8 @@ function startBlack() {
 			document.getElementById("btnBlackPlayer").disabled = true;
 			document.getElementById("btnWhitePlayer").disabled = false;
 			document.getElementById("btnBlackPlayer").style.color = "grey";
-			document.getElementById("btnWhitePlayer").style.color = "whitesmoke";
-			document.getElementById("btnStop").style.color = "whitesmoke";
+			document.getElementById("btnWhitePlayer").style.color = "black";
+			document.getElementById("btnStop").style.color = "white";
 			whiteIsRunning = false;
 			blackIsRunning = true;
 			document.getElementById("btnWhitePlayer").disabled = false;
@@ -124,8 +124,8 @@ function stop() {
 	 	if (whiteIsRunning == true) {
 	 		document.getElementById("btnWhitePlayer").disabled = false;
 	 		document.getElementById("btnBlackPlayer").disabled = true;
-	 		document.getElementById("btnWhitePlayer").style.color = "whitesmoke";
-	 		document.getElementById("btnBlackPlayer").style.color = "grey";
+	 		document.getElementById("btnWhitePlayer").style.color = "black";
+	 		document.getElementById("btnBlackPlayer").style.color = "white";
 
 	 	} else if (blackIsRunning == true) {
 	 		document.getElementById("btnBlackPlayer").disabled = false;
@@ -167,7 +167,7 @@ clearInterval(intervalIDBlack);
 clearInterval(intervalIDWhite);
 document.getElementById("btnWhitePlayer").disabled = false;
 document.getElementById("btnBlackPlayer").disabled = false;
-document.getElementById("btnWhitePlayer").style.color = "whitesmoke";
+document.getElementById("btnWhitePlayer").style.color = "black";
 document.getElementById("btnBlackPlayer").style.color = "whitesmoke";
 
 }

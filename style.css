@@ -1,3 +1,13 @@
+#timer {
+    display:  flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+
 #blackClock {
   display : flex;
   font-size : 1.5em;
@@ -12,7 +22,7 @@
  #whiteSpace {
   display : flex;
   flex-direction: column;
-  background: white;
+  background: whitesmoke;
   padding:  5px;
  }
  #blackSpace {
@@ -24,6 +34,7 @@
 #btn{
   display:  flex;
   flex-direction : column;
+  height: 100%;
 
 }
 #btnAutre{
@@ -44,6 +55,7 @@
   justify-content: center;
   border: 5px solid white;
   letter-spacing: 5px;
+  margin-top: 2%,0%, 2%, 0%;
 }
 
 
@@ -72,10 +84,10 @@ p {
 
 
 button {
-  margin: 10px;
-  width: 150px;
-  height: 60px;
-  padding: 10px 10px;
+  margin: auto;
+  width: 80%;
+  height: 100%;
+  padding: auto;
   font-size: 0.8em;
   font-weight: bolder;
   font-family: 'Baloo 2', cursive;
@@ -87,20 +99,21 @@ button {
   border-style: hidden;
   background:black;
   color: whitesmoke;
-  border-radius: 50%;
+  border-radius: 10%;
   border-color: whitesmoke;
+  font-size : 2em;
   
 }
 
 
 button:hover {
-  font-size: 1em;
+  font-size: 2em;
   
 }
 
  button:active {
-            background-color: whitesmoke;
-            color:black;
+            
+            color:grey;
             font-weight: bolder;
             box-shadow: inset  1px gray;
             transform: translateY(2px);
@@ -112,31 +125,85 @@ button:hover {
 }
 
 
-@media screen and (max-width: 600px) {
+@media all and (orientation: portrait) {
+
+ body {
+    
+    background-color: green;
+
+  }
+
   #timer {
     display:  flex;
     flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    box-shadow: inset 0px 0px 30px 5px #CDCAC2, 5px 0px 20px 5px white;
+  }
+
+  #title {
+    height: 10%;
+    font-size: 2rem;
+    box-shadow: inset 0px 0px 30px 5px #CDCAC2, 5px 0px 20px 5px white;
   }
   #whiteAndBlack {
     display:  flex;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
+    height:  100%;
+
   }
 
   #whiteSpace, #blackSpace{
 
     border: 10px solid whitesmoke;
+    height: 100%;
     
   }
 
+
+
   #btnBlackPlayer, #btnWhitePlayer {
     margin: auto;
+    width: 50%;
+    height: 100%;
+    margin-top: 5%;
+    box-shadow: inset 0px 0px 30px 5px #CDCAC2, 5px 0px 20px 5px white;
   }
+
+  #btnWhitePlayer {
+    background-color: white;
+    color: black;
+  }
+
 
   #blackClock, #whiteClock {
     margin: auto;
-    font-size: 2rem;
+    font-size: 7rem;
+    font-family: 'Baloo 2', cursive;
 
   }
+
+  button {
+    font-size: 3rem;
+    
+  }
+
+   button:active {
+            background-color: whitesmoke;
+            color:black;
+            font-size:  3rem;
+            font-weight: bolder;
+            box-shadow: inset  1px gray;
+            transform: translateY(2px);
+        
+         }
+    #btnAutre {
+      height: 30%;
+      box-shadow: inset 0px 0px 30px 5px #CDCAC2, 5px 0px 20px 5px white;
+    }
 }
